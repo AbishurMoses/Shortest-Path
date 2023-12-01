@@ -1,0 +1,104 @@
+﻿  graph.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(231,50): error C2039: 'value_type': is not a member of 'Edge'
+  (compiling source file 'graph.cpp')
+  C:\Users\abish\Code\C++\Breadth-First Algo\Breadth-first search\Breadth-first search\graph.cpp(154,8):
+  see declaration of 'Edge'
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(231,50):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\abish\Code\C++\Breadth-First Algo\Breadth-first search\Breadth-first search\graph.cpp(163,37):
+  	see reference to class template instantiation 'std::priority_queue<Edge,Edge,int>' being compiled
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(231,50): error C2061: syntax error: identifier 'value_type'
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(232,50): error C2039: 'reference': is not a member of 'Edge'
+  (compiling source file 'graph.cpp')
+  C:\Users\abish\Code\C++\Breadth-First Algo\Breadth-first search\Breadth-first search\graph.cpp(154,8):
+  see declaration of 'Edge'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(232,50): error C2061: syntax error: identifier 'reference'
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(233,50): error C2039: 'const_reference': is not a member of 'Edge'
+  (compiling source file 'graph.cpp')
+  C:\Users\abish\Code\C++\Breadth-First Algo\Breadth-first search\Breadth-first search\graph.cpp(154,8):
+  see declaration of 'Edge'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(233,50): error C2061: syntax error: identifier 'const_reference'
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(234,50): error C2039: 'size_type': is not a member of 'Edge'
+  (compiling source file 'graph.cpp')
+  C:\Users\abish\Code\C++\Breadth-First Algo\Breadth-first search\Breadth-first search\graph.cpp(154,8):
+  see declaration of 'Edge'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(234,50): error C2061: syntax error: identifier 'size_type'
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(238,34): error C2065: 'value_type': undeclared identifier
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(238,19): error C2923: 'std::is_same_v': 'value_type' is not a valid template type argument for parameter '<unnamed-symbol>'
+  (compiling source file 'graph.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(238,34):
+  see declaration of 'value_type'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(238,19): error C2062: type 'unknown-type' unexpected
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(238,93): error C2238: unexpected token(s) preceding ';'
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(364,26): error C3646: 'size': unknown override specifier
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(364,30): error C2059: syntax error: '('
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(364,87): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(368,32): error C3646: 'top': unknown override specifier
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(368,35): error C2059: syntax error: '('
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(368,93): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(372,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(372,31): error C2143: syntax error: missing ',' before '&'
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(377,15): error C2061: syntax error: identifier 'value_type'
+  (compiling source file 'graph.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(414,17): error C2512: 'Edge::Edge': no appropriate default constructor available
+  (compiling source file 'graph.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(414,17):
+  while trying to match the argument list '()'
+  C:\Users\abish\Code\C++\Breadth-First Algo\Breadth-first search\Breadth-first search\graph.cpp(163,37):
+  see reference to function 'std::priority_queue<Edge,Edge,int>::priority_queue(void)'
+  
+C:\Users\abish\Code\C++\Breadth-First Algo\Breadth-first search\Breadth-first search\graph.cpp(169,15): error C2665: 'std::priority_queue<Edge,Edge,int>::push': no overloaded function could convert all the argument types
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(372,10):
+  could be 'void std::priority_queue<Edge,Edge,int>::push(const int)'
+  	C:\Users\abish\Code\C++\Breadth-First Algo\Breadth-first search\Breadth-first search\graph.cpp(169,15):
+  	'void std::priority_queue<Edge,Edge,int>::push(const int)': cannot convert argument 1 from 'Edge' to 'const int'
+  		C:\Users\abish\Code\C++\Breadth-First Algo\Breadth-first search\Breadth-first search\graph.cpp(169,25):
+  		No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+  C:\Users\abish\Code\C++\Breadth-First Algo\Breadth-first search\Breadth-first search\graph.cpp(169,15):
+  while trying to match the argument list '(Edge)'
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\queue(360,76): error C2039: 'empty': is not a member of 'Edge'
+  (compiling source file 'graph.cpp')
+  C:\Users\abish\Code\C++\Breadth-First Algo\Breadth-first search\Breadth-first search\graph.cpp(154,8):
+  see declaration of 'Edge'
+  
+C:\Users\abish\Code\C++\Breadth-First Algo\Breadth-first search\Breadth-first search\graph.cpp(174,20): error C2039: 'top': is not a member of 'std::priority_queue<Edge,Edge,int>'
+  C:\Users\abish\Code\C++\Breadth-First Algo\Breadth-first search\Breadth-first search\graph.cpp(163,5):
+  see declaration of 'std::priority_queue<Edge,Edge,int>'
+  

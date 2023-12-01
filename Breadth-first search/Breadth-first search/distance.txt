@@ -1,0 +1,8 @@
+              Amsterdam   Berlin    Copenhagen  London   Moscow    Rome    Warsaw
+Amsterdam         -        365         381        220     1325      808      673
+Berlin           365        -          225        575      995      730      320
+Copenhagen       381       225          -         590      970      948      415
+London           220       575         590         -      1540      890      890        
+Moscow          1328       995         970       1540       -      1462      710
+Rome             808       730         948        890     1462       -       810
+Warsaw           673       320         415        890      710      810       -
