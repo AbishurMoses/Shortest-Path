@@ -11,7 +11,7 @@ int main() {
     Graph mst = g.kruskal();
     std::cout << mst << '\n';
     std::cout << "Graph edge weights: " << mst.weight() << '\n';
-    int path_weight = mst.breadth_first_path_weight("London", "Moscow");
+    int path_weight = mst.breadth_first_path_weight("London", "Amsterdam");
     if (path_weight == Graph::NO_CONNECTION) {
         std::cout << "No such path exists\n";
     }
