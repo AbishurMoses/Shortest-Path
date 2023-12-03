@@ -1,3 +1,5 @@
+// Abishur Moses
+// 12/3/2023
 #include "Graph.h"
 #include <string>
 #include <iostream>
@@ -7,35 +9,44 @@
 #include <unordered_map>
 #include <queue>
 
-// Code works. Display needs tuning
-
 using namespace std;
 
 // Draw Graph
 void generate_graph(vector<vector<int>>& adjacency_matrix, vector<string>& vertex_to_label_map) {
     size_t vertex_size = adjacency_matrix.size();
-    int num_of_cities = 0;
+
+    // Calculate width for cities
+    vector<size_t> column_widths(vertex_size, 0);
+    for (int i = 0; i < vertex_size; i++) {
+        column_widths[i] = vertex_to_label_map[i].length() + 2;
+    }
 
     // Print Headers
-    cout << setw(12) << " ";
+    cout << setw(14) << " ";
     for (int i = 0; i < vertex_size; i++) {
-        cout << right << setw(6) << " " << vertex_to_label_map[i];
-        num_of_cities++;
+        cout << right << setw(column_widths[i]) << vertex_to_label_map[i];
     }
     cout << endl;
 
-    // Print seperator
-    cout << setw(12) << right << " " << "+" << setfill('-') << setw(num_of_cities * 13) << "" << std::setfill(' ') << std::endl;
+    // Print separator
+    cout << setw(12) << right << " " << "+" << setfill('-');
+    for (int width : column_widths) {
+        cout << setw(width) << "";
+    }
+    cout << setfill(' ') << endl;
 
-    //Print contents
+    // Print Content
     for (int i = 0; i < vertex_size; i++) {
-        cout << right << setw(12)  << vertex_to_label_map[i] << "|";
+        cout << right << setw(12) << vertex_to_label_map[i] << "|";
+        cout << "  ";
         for (int j = 0; j < vertex_size; j++) {
             if (adjacency_matrix[i][j] == INT_MAX) {
-                cout << setw(13) << "-";
-            }
-            else {
-                cout << setw(13)  << adjacency_matrix[i][j];
+                cout << right << setw(ceil(column_widths[j] / 2)) << " ";
+                cout << left << setw(ceil(column_widths[j] / 2))  << "-";
+            } else {
+                cout << right << setw(ceil(column_widths[j] / 2)) << " ";
+                cout << left << setw(ceil(column_widths[j] / 2))  << adjacency_matrix[i][j];
+
             }
         }
         cout << endl;
@@ -46,7 +57,7 @@ Graph::Graph(const string& filename) {
     // Opening File
     ifstream file(filename);
 
-    // Error checking if file failed to open
+    // Throw error if file failed to open
     if (!file.is_open()) {
         cout << "Error Opening File " << filename;
         return;
@@ -131,7 +142,8 @@ int Graph::weight() const {
 int Graph::breadth_first_path_weight(const string& begin, const string& end) {
     queue<int> q;
     vector<int> visited(size(), 0);
-    vector<int> distance(size(), NO_CONNECTION); // Distance array to store path weights
+    //Store path weights
+    vector<int> distance(size(), NO_CONNECTION);
     int vector_index = 0;
 
     // If begin or end doesn't exist in unordered_map
@@ -144,7 +156,7 @@ int Graph::breadth_first_path_weight(const string& begin, const string& end) {
     // BFS algorithm
     // Finding index of begin and pushing to queue
     visited[label_to_vertex_map[begin]] = 1;
-    distance[label_to_vertex_map[begin]] = 0; // Distance to the starting vertex is 0
+    distance[label_to_vertex_map[begin]] = 0;
     q.push(label_to_vertex_map[begin]);
     
 
@@ -155,11 +167,10 @@ int Graph::breadth_first_path_weight(const string& begin, const string& end) {
         for (int i = 0; i < adjacency_matrix[vector_index].size(); i++) {
             if (visited[i] != 1 && adjacency_matrix[vector_index][i] != NO_CONNECTION) {
                 visited[i] = 1;
-                distance[i] = distance[vector_index] + adjacency_matrix[vector_index][i]; // Assuming unweighted graph, otherwise use the edge weight
+                distance[i] = distance[vector_index] + adjacency_matrix[vector_index][i];
                 q.push(i);
 
                 if (vertex_to_label_map[i] == end) {
-                    // Found the destination vertex, return the distance
                     return distance[i];
                 }
             }
