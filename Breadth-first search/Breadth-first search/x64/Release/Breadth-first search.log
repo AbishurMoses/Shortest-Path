@@ -1,7 +1,12 @@
-﻿  kruskalmain.cpp
+﻿  graph.cpp
+C:\Users\abish\Code\C++\Shortest_path\Breadth-first search\Breadth-first search\graph.cpp(33,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\abish\Code\C++\Shortest_path\Breadth-first search\Breadth-first search\graph.cpp(44,43): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+C:\Users\abish\Code\C++\Shortest_path\Breadth-first search\Breadth-first search\graph.cpp(45,42): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+C:\Users\abish\Code\C++\Shortest_path\Breadth-first search\Breadth-first search\graph.cpp(47,43): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+C:\Users\abish\Code\C++\Shortest_path\Breadth-first search\Breadth-first search\graph.cpp(48,42): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
   Generating code
-  1 of 795 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  42 of 836 functions ( 5.0%) were compiled, the rest were copied from previous compilation.
+    39 functions were new in current compilation
+    79 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Breadth-first search.vcxproj -> C:\Users\abish\Code\C++\Shortest_path\Breadth-first search\x64\Release\Breadth-first search.exe
